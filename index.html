@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+
+    <link rel="stylesheet" href="typingGame.css">
+
+    <!-- tailwind -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+<body class="min-h-screen font-mono">
+
+    <main class="maindiv min-h-screen">
+
+        <h1 class="text-white font-bold text-center ">Typing Game</h1>
+
+<!-- first section  -->
+
+        <section id="SecOne" class="sectionOne ">
+
+            <h1 class="alphabetClashText uppercase text-white font-bold text-center">Alphabet Clash</h1>
+
+
+            <p class="text-white text-center">Unleash Your Keyboard Kung Fu : Press "Enter" to Play</p>
+
+
+            <button onclick="changeFirstScreen()" id="playNow" class="btn btn-active min-h-fit ">Play Now</button>
+
+        </section>
+
+
+
+
+
+        <!-- second section  -->
+
+        <section id="SecTwo" class="secondSection hidden ">
+
+            <!-- screen Here  -->
+
+        <div class="screenHere">
+            <div id="fullScreen" class="artboard artboard-horizontal phone-6 ">
+                <span id="ScreenText" class="text-center ">Y</span>
+            </div>
+        </div>
+
+
+
+        <!-- keybroad  -->
+
+        <div class="keybroad">
+            <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="q" class="kbd">q</kbd>
+                <kbd id="w" class="kbd">w</kbd>
+                <kbd id="e" class="kbd">e</kbd>
+                <kbd id="r" class="kbd">r</kbd>
+                <kbd id="t" class="kbd">t</kbd>
+                <kbd id="y" class="kbd">y</kbd>
+                <kbd id="u" class="kbd">u</kbd>
+                <kbd id="i" class="kbd">i</kbd>
+                <kbd id="o" class="kbd">o</kbd>
+                <kbd id="p" class="kbd">p</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="a" class="kbd">a</kbd>
+                <kbd id="s" class="kbd">s</kbd>
+                <kbd id="d" class="kbd">d</kbd>
+                <kbd id="f" class="kbd">f</kbd>
+                <kbd id="g" class="kbd">g</kbd>
+                <kbd id="h" class="kbd">h</kbd>
+                <kbd id="j" class="kbd">j</kbd>
+                <kbd id="k" class="kbd">k</kbd>
+                <kbd id="l" class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="z" class="kbd">z</kbd>
+                <kbd id="x" class="kbd">x</kbd>
+                <kbd id="c" class="kbd">c</kbd>
+                <kbd id="v" class="kbd">v</kbd>
+                <kbd id="b" class="kbd">b</kbd>
+                <kbd id="n" class="kbd">n</kbd>
+                <kbd id="m" class="kbd">m</kbd>
+                <kbd id="/" class="kbd">/</kbd>
+              </div>
+        </div>
+        
+
+        <!-- life and score  -->
+
+        <div class="LifeAndScore flex justify-between mt-10 ">
+
+            <div class="buttonOne">
+                <button class="btn bg-blue-600 text-black font-extrabold ml-5">
+                    Life
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+
+                    <span id="lifeScore">5</span>
+                  </button>
+            </div>
+
+
+
+            <div class="buttonTwo">
+                <button class="btn bg-blue-600 text-black font-extrabold mr-5">
+                    Score
+                 <span id="scoreIncrease">0</span>
+                </button>
+            </div>
+
+
+        </div>
+
+
+        </section>
+
+
+
+        <!-- Third Section  -->
+
+
+        <section  id="SecThird" class="sectionThird hidden">
+            <div class="scoreDiv">
+                <h1>Score : <span id="finalScore"> 0</span></h1>
+                <button onclick="playAgain()" id="playAgain" class="btn btn-warning">Play Again</button>
+                <p>Practice will make you pro</p>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="typingGame.js"></script>
+    
+</body>
+</html>

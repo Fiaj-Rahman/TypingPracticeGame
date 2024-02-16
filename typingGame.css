@@ -1,0 +1,343 @@
+body{
+    background-color: rgb(2, 2, 34);
+    
+    max-width: 1200px;
+}
+
+.maindiv{
+    background-image: url(images/background.png);
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.sectionOne{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.alphabetClashText{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 200px;
+}
+
+
+#playNow{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+
+
+
+/* section Two  */
+
+#fullScreen{
+    border: 20px solid rgb(180, 1, 1);
+    border-radius: 20px;
+    width: 100%;
+    
+    background-color: white;
+    opacity: 0.5;
+}
+
+
+.keybroad{
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+
+.ScreenText{
+    border: 2px solid blue;
+    
+}
+
+#ScreenText{
+    font-size: 50px;
+    font-weight: 800;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Thrid section  */
+
+.scoreDiv
+{
+    background-image: linear-gradient(to right, rgb(99 84 229), rgb(170 179 177));
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.scoreDiv h1,span{
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+/* Tab device  */
+
+
+@media only screen and (max-width: 1000px) and (min-width: 600px)  
+
+{
+
+    body{
+        background-color: rgb(2, 2, 34);
+    }
+    
+    .maindiv{
+        background-image: url(images/background.png);
+        width: 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    
+    .sectionOne{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .alphabetClashText{
+        font-size: 70px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 120px;
+    }
+    
+    
+    #playNow{
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-left: 235px;
+    }
+    
+    
+    
+    
+    /* section Two  */
+    
+    #fullScreen{
+        border: 20px solid rgb(180, 1, 1);
+        border-radius: 20px;
+        width: 100%;
+        
+        background-color: white;
+        opacity: 0.5;
+    }
+    
+    
+    .keybroad{
+        margin-top: 50px;
+        font-weight: 900;
+    }
+    
+    
+    .ScreenText{
+        border: 2px solid blue;
+        
+    }
+    
+    #ScreenText{
+        font-size: 50px;
+        font-weight: 800;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+   
+    
+    
+    
+    
+    /* Thrid section  */
+    
+    .scoreDiv
+    {
+        background-image: linear-gradient(to right, rgb(99 84 229), rgb(170 179 177));
+        width: 50%;
+        height: 200px;
+        border-radius: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .scoreDiv h1,span{
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Device  */
+
+@media only screen and (max-width: 600px) 
+{
+
+    
+    body{
+        background-color: rgb(2, 2, 34);
+        
+    }
+    
+    .maindiv{
+        background-image: url(images/background.png);
+        width: 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    
+    .sectionOne{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .alphabetClashText{
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 200px;
+    }
+    
+    
+    #playNow{
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-left: 78px;
+    }
+    
+    
+    
+    
+    /* section Two  */
+    
+    #fullScreen{
+        border: 20px solid rgb(180, 1, 1);
+        border-radius: 20px;
+        width: 100%;
+        
+        background-color: white;
+        opacity: 0.5;
+    }
+    
+    
+    .keybroad{
+        margin-top: 50px;
+        font-weight: 900;
+    }
+    
+    
+    .ScreenText{
+        border: 2px solid blue;
+        
+    }
+    
+    #ScreenText{
+        font-size: 50px;
+        font-weight: 800;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .LifeAndScore{
+        flex-direction: column;    
+        justify-content: center;
+        margin: 0px;
+    }
+    
+   .buttonTwo{
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+   }
+
+   .buttonOne{
+    margin-top: 30px;
+    text-align: center;
+   }
+    
+    
+    
+    /* Thrid section  */
+    
+    .scoreDiv
+    {
+        background-image: linear-gradient(to right, rgb(99 84 229), rgb(170 179 177));
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .scoreDiv h1,span{
+        font-weight: 800;
+        font-size: 30px;
+        margin-top: 0px;
+       
+    }
+    
+
+
+}
