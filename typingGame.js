@@ -85,6 +85,11 @@ function removeBackgroundColor(addColor)
 document.addEventListener('keyup', function KeybroadHandle(event){
    const playerKeybroadPress = event.key;
 
+   if(playerKeybroadPress === 'Escape' || playerKeybroadPress === 'Tab')
+   {
+    gameOver();
+   }
+
    const alphabetMatch = document.getElementById('ScreenText');
    const alphabetValue = alphabetMatch.innerText;
 
@@ -112,7 +117,7 @@ document.addEventListener('keyup', function KeybroadHandle(event){
     const updateLifeScoreValue = gameLifeScoreValue -1;
     gameLifeScore.innerText = updateLifeScoreValue;
 
-    if(gameLifeScoreValue === 0)
+    if(gameLifeScoreValue === 1)
     {
         gameOver()
     }
@@ -128,6 +133,16 @@ function gameOver()
 {
     RemovedClass('SecThird');
     AddClass('SecTwo')
+
+    const increaseScore = document.getElementById('scoreIncrease');
+    const scoreIncreaseValues = increaseScore.innerText;
+
+    const finalScoreValue = document.getElementById('finalScore');
+    finalScoreValue.innerText = scoreIncreaseValues;
+
+    const changeAlphabet = getElementByIdText('ScreenText')
+    removeBackgroundColor(changeAlphabet)
+
 }
 
 
@@ -144,4 +159,12 @@ function playAgain()
     const gameScore = document.getElementById('scoreIncrease');
     gameScore.innerText = 0;
 
+}
+
+
+function getElementByIdText(elementId)
+{
+    const element = document.getElementById(elementId)
+   const text =  element.innerText;
+   return text;
 }
